@@ -1,5 +1,5 @@
 # prefix キーの設定　Ctrl + t
-escape ^Tt
+escape ^@@
 
 # onにすると、ビープを鳴らすときに錫際に音を鳴らさず、下のメッセージ領域にメッセージを表示させる。
 vbell on

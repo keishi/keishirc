@@ -93,7 +93,7 @@ setopt hist_verify
 setopt NO_hup
 
 # Ctrl+D では終了しないようになる（exit, logout などを使う）
-setopt ignore_eof
+#setopt ignore_eof
 
 # コマンドラインでも # 以降をコメントと見なす
 setopt interactive_comments
@@ -174,7 +174,7 @@ setopt autopushd
 
 # PROMPTの設定 & GNU Screen 自動起動
 if [ x$WINDOW != x ]; then
-    export PROMPT="%m:%n>$WINDOW%# "
+    export PROMPT="%m:%n:$WINDOW%# "
 else
     export PROMPT='%m:%n%# '
     if [ -e `which screen` ]; then
