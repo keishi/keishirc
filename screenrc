@@ -1,0 +1,21 @@
+# prefix キーの設定　Ctrl + t
+escape ^Tt
+
+# onにすると、ビープを鳴らすときに錫際に音を鳴らさず、下のメッセージ領域にメッセージを表示させる。
+vbell on
+
+# 最終行にウィンドウ一覧を表示
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+# ステータスラインの表示。
+defhstatus I^En:^EtI
+
+# offにするとスタートアップ画面を表示させなくする。
+startup_message off
+
+# onにしておくとscreenがいきなりお亡くなりになられても、その時のプロセスは生きて残る
+autodetach on
+
+# ログを設定
+logfile "screenlog/screen-%Y%m%d-%n.log"
+log on
+deflog on
