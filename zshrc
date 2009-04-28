@@ -172,7 +172,7 @@ setopt autopushd
 
 
 
-// PROMPTの設定 & GNU Screen 自動起動
+# PROMPTの設定 & GNU Screen 自動起動
 if [ x$WINDOW != x ]; then
     export PROMPT="%m:%n>$WINDOW%# "
 else
