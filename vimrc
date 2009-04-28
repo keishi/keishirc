@@ -9,6 +9,7 @@ set viminfo='50,<1000,s100,\"50 " read/write a .viminfo file, don't store more t
 "set viminfo='50,<1000,s100,:0,n~/.vim/viminfo
 set history=100   " keep 50 lines of command line history
 set ruler   " show the cursor position all the time
+set number
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.

@@ -183,6 +183,13 @@ else
 fi
 export RPROMPT="[%~]"
 
+preexec () {
+    if [ $TERM = "screen" ]; then
+        1="$1 " # deprecated.
+        echo -ne "\ek${${(s: :)1}[0]}\e\\"
+    fi
+}
+
 ### aliases ###
 alias mv='nocorrect mv'       # no spelling correction on mv
 alias cp='nocorrect cp'
