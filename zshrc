@@ -226,9 +226,6 @@ if [ -e ~/.zshrc_cad ]; then
     source .zshrc_cad
 fi
 
-if [ -e ~/.zshrc_cad ]; then
-    source .zshrc_cad
-fi
 
 
 
